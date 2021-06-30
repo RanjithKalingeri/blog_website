@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title></title>
+  </head>
+  <body>
+
+    <nav class = 'navbar navbar-default navbar-static-top'>
+      <div class="container">
+
+        <div class="jumbotron">
+
+          <ul class = 'nav navbar-nav'>
+           <li><a class = 'navbar-brand' href="{% url 'base' %}">HOME</a></li>
+            <li><a class = "navbar-link" href="{% url 'admin:index' %}">ADMIN</a></li>
+           <li><a class = "navbar-link" href="{% url 'apptwo:register' %}">Registration</a></li>
+           {% if user.is_authenticated %}
+           <li><a class = 'navbar-link' href="{% url 'logout' %}">LogOut</a></li>
+            {% else %}
+            <li><a class = "navbar-link" href="{% url 'apptwo:login' %}">Login</a></li>
+            {% endif %}
+
+
+
+           <h1>welcome to django final level</h1>
+
+
+          </ul>
+
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <div class="container">
+
+     {% block body_block %}
+     {% endblock %}
+
+    </div>
+
+  </body>
+</html>

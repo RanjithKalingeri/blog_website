@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 TEMPLATE_DIR = BASE_DIR.joinpath('templates')
 STATIC_DIR =   BASE_DIR.joinpath('static')
-MEDIA_DIR =    BASE_DIR.joinpath.('media')
+MEDIA_DIR =    BASE_DIR.joinpath('media')
 
 
 

@@ -25,7 +25,7 @@ TEMPLATE_DIR = BASE_DIR.joinpath('templates')
 STATIC_DIR =   BASE_DIR.joinpath('static')
 MEDIA_DIR =    BASE_DIR.joinpath('media')
 
-ALLOWED_HOSTS = ['ranjithkalingeri.pythonanywhere.com']
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -37,7 +37,7 @@ SECRET_KEY = 'django-insecure-+%(fy8^-supr3ozfmnu5%!3@@jww_v)p$pp1)c6f%%)lit0x2l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ranjithkalingeri.pythonanywhere.com']
 
 
 # Application definition

@@ -25,7 +25,7 @@ TEMPLATE_DIR = BASE_DIR.joinpath('templates')
 STATIC_DIR =   BASE_DIR.joinpath('static')
 MEDIA_DIR =    BASE_DIR.joinpath('media')
 
-
+ALLOWED_HOSTS = ['ranjithkalingeri.pythonanywhere.com']
 
 
 # Quick-start development settings - unsuitable for production
